@@ -1,0 +1,19 @@
+[package]
+name = "subxt-gen"
+version = "0.1.0"
+authors = ["Gregory Hill <gregorydhill@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+argh = "0.1.4"
+ureq = { version = "2.0.1", features = ["json"] }
+serde = { version = "1.0.119", features = ["derive"] }
+serde_json = "1.0.61"
+hex = "0.4.2"
+frame-metadata = { package = "frame-metadata", git = "https://github.com/paritytech/frame-metadata", branch = "subsee", features = ["v12", "v13", "std"] }
+scale = { package = "parity-scale-codec", version = "2.0.0", default-features = false }
+color-eyre = "0.5.10"
+heck = "0.3.2"
+syn = "1.0.58"
+quote = "1.0.8"
+proc-macro2 = "1.0.24"
